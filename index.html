@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <link rel="shortcut icon" href="./src/img/dumbbell.svg" type="image/x-icon">
+</head>
+</head>
+
+<body>
+
+    <main id="container">
+        <section class="img">
+            <img src="./src/img/imc-img.svg" alt="">
+        </section>
+
+        <section id="calculator">
+            <form action="" id="form">
+                <h1 id="title">
+                    Calculadora - IMC
+                </h1>
+
+                <div class="input-box">
+                    <label for="weight">
+                        Peso em KG
+                    </label>
+                    <div class="input-field">
+                        <i class="uil uil-weight"></i>
+                        <input type="number
+                    " id="weight" required>
+                        <span>kg</span>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="height">
+                        Altura em metros
+                    </label>
+                    <div class="input-field">
+                        <i class="uil uil-ruler"></i>
+                        <input type="number
+                    " id="height" required>
+                        <span>m</span>
+                    </div>
+                </div>
+
+                <button id="calculator-btn">
+                    Calcular
+                </button>
+            </form>
+
+            <div id="infos" class="hidden">
+                <div id="result">
+
+                    <div id="imc">
+                        <span id="value"></span>
+                        <span>Seu IMC</span>
+                    </div>
+
+                    <div id="description">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div id="more-info">
+                    <a href="https://mundoeducacao.uol.com.br/saude-bem-estar">
+                        Mais informações sobre o IMC
+                        <i class="uil uil-external-link-alt"></i>   
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./src/js/script.js"></script>
+</body>
+
+</html>
